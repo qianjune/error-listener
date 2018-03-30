@@ -98,6 +98,7 @@
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-typescript2": "^0.11.1",
     "semantic-release": "^15.1.4",
+    "travis-deploy-once": "^4.4.1",
     "ts-jest": "^22.0.0",
     "ts-node": "^5.0.1",
     "tslint": "^5.8.0",
@@ -105,7 +106,9 @@
     "tslint-config-standard": "^7.0.0",
     "typedoc": "^0.11.0",
     "typescript": "^2.6.2",
-    "validate-commit-msg": "^2.12.2",
-    "travis-deploy-once": "^4.4.1"
+    "validate-commit-msg": "^2.12.2"
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^2.0.0"
   }
 }
