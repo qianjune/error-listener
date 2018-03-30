@@ -20,11 +20,11 @@ describe('Dummy test', () => {
     }
     const errBody = {
       message: 'example error',
-      file: 'main.e904329e8248bf816c48.js',
-      lineNo: 100,
-      colNo: 10
+      file: 'main.30aa497be0d5d5ca6055.js',
+      lineNo: 1,
+      colNo: 925011
     }
     const result = el.start(config)(errBody.message, errBody.file, errBody.lineNo, errBody.colNo)
-    // expect(result).not.toBeNull()
+    expect(result).not.toBeNull()
   })
 })

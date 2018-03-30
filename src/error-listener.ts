@@ -21,6 +21,7 @@ export default class ErrorListener {
     colNo: number
   ) => {
     const response = await this.asyncFetch(url, {
+      email,
       url,
       product,
       message,
