@@ -9,14 +9,14 @@ export default class ErrorListener {
   asyncFetch = (url: string, body: object) => {
     fetch(url, {
       method: 'POST',
-      body,
+      body: JSON.stringify(body),
       headers: { 'Content-Type': 'application/json' }
     })
   }
 
   start = ({ email, url, product }: C) => async (
     message: string,
-    fileUrl: string,
+    source: string,
     lineNo: number,
     colNo: number
   ) => {
@@ -24,7 +24,7 @@ export default class ErrorListener {
       url,
       product,
       message,
-      fileUrl,
+      source,
       lineNo,
       colNo
     })
